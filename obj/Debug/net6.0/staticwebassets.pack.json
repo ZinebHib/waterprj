@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\waterprj.bundle.scp.css",
+      "PackagePath": "staticwebassets\\waterprj.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\2f82315439a80249be122b194140144a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\2f82315439a80249be122b194140144a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\4ac888ef9b3acd18693f42926b7ab897.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\4ac888ef9b3acd18693f42926b7ab897.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\51ab49f632349355a6fc18afbbcd9f9b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\51ab49f632349355a6fc18afbbcd9f9b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\64bc2c6ece9600546229002bb7671a2f.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\64bc2c6ece9600546229002bb7671a2f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\657591ac130496a1ba74e5ae47e74023.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\657591ac130496a1ba74e5ae47e74023.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.png"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\a1b92477abf4bf889cfc6543b8b59b6f.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\a1b92477abf4bf889cfc6543b8b59b6f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\a4b0d05a1f7d2c52c6b335e05084f1ab.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\a4b0d05a1f7d2c52c6b335e05084f1ab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\cf816ece4922efd3d894d46f96daa562.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\cf816ece4922efd3d894d46f96daa562.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\e65de8c79c7a9632e84525d13462bdcb.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\e65de8c79c7a9632e84525d13462bdcb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\close-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\close-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\header-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\header-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\facebook.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\facebook.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\google.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\google.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\ibm.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\ibm.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\microsoft.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\microsoft.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\map-image.png",
+      "PackagePath": "staticwebassets\\assets\\img\\map-image.png"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\navbar-logo.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\navbar-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\team\\11 (1).jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\11 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\team\\11 (2).jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\11 (2).jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\team\\11 (3).jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\11 (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.waterprj.props",
+      "PackagePath": "build\\waterprj.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.waterprj.props",
+      "PackagePath": "buildMultiTargeting\\waterprj.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.waterprj.props",
+      "PackagePath": "buildTransitive\\waterprj.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.waterprj.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

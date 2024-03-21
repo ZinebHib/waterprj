@@ -1,0 +1,124 @@
+﻿@model IEnumerable<waterprj.Models.Consumption>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Volume)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Volume)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<h1>Water Consumption</h1>
+
+<h2>Average Consumption per User per Month</h2>
+<canvas id="userConsumptionChart" width="400" height="200"></canvas> <!-- Ajuster la taille ici -->
+
+<h2>General Average Consumption per Month</h2>
+<canvas id="generalConsumptionChart" width="400" height="200"></canvas> <!-- Ajuster la taille ici -->
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctxUser = document.getElementById('userConsumptionChart').getContext('2d');
+        var userChartData = @Html.Raw(Json.Serialize(ViewData["UserChartData"]));
+
+        var userChart = new Chart(ctxUser, {
+            type: 'bar', // Utiliser un graphique à barres
+            data: {
+                labels: Object.keys(userChartData),
+                datasets: [{
+                    label: 'Average Consumption',
+                    data: Object.values(userChartData),
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+
+        var ctxGeneral = document.getElementById('generalConsumptionChart').getContext('2d');
+        var generalChartData = @Html.Raw(Json.Serialize(ViewData["GeneralChartData"]));
+
+        var generalChart = new Chart(ctxGeneral, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(generalChartData),
+                datasets: [{
+                    label: 'General Average Consumption',
+                    data: Object.values(generalChartData),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+}

@@ -1,0 +1,73 @@
+﻿@model waterprj.Models.Estimation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Estimation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserId" class="control-label"></label>
+                <input asp-for="UserId" class="form-control" />
+                <span asp-validation-for="UserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstimatedVolume" class="control-label"></label>
+                <input asp-for="EstimatedVolume" class="form-control" />
+                <span asp-validation-for="EstimatedVolume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfPeople" class="control-label"></label>
+                <input asp-for="NumberOfPeople" class="form-control" />
+                <span asp-validation-for="NumberOfPeople" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="HasPool" /> @Html.DisplayNameFor(model => model.HasPool)
+                </label>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="UsesDishwasher" /> @Html.DisplayNameFor(model => model.UsesDishwasher)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="LaundryFrequency" class="control-label"></label>
+                <input asp-for="LaundryFrequency" class="form-control" />
+                <span asp-validation-for="LaundryFrequency" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ShowerDuration" class="control-label"></label>
+                <input asp-for="ShowerDuration" class="form-control" />
+                <span asp-validation-for="ShowerDuration" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="LeakDetection" /> @Html.DisplayNameFor(model => model.LeakDetection)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
