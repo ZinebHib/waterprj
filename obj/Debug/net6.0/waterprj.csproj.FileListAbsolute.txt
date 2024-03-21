@@ -284,3 +284,4 @@ C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\refint\waterp
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.pdb
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.genruntimeconfig.cache
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\ref\waterprj.dll
+C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.sourcelink.json

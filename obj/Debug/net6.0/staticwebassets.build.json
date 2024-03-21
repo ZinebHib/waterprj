@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zhw1J7dsT4ac1rX3FwdlrnsPbE5gRZEpWfYBK27LM2M=",
+  "Hash": "9J/tM+04oewZKo3ecplJhJ2+TgT+HdPrQl+JUsfMT20=",
   "Source": "waterprj",
   "BasePath": "_content/waterprj",
   "Mode": "Default",
@@ -1423,25 +1423,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\about\\a4b0d05a1f7d2c52c6b335e05084f1ab.jpg"
     },
     {
-      "Identity": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.jpg",
-      "SourceId": "waterprj",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\",
-      "BasePath": "_content/waterprj",
-      "RelativePath": "assets/img/about/Blue Company Water Drop Logo -Photoroom.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.jpg"
-    },
-    {
       "Identity": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.png",
       "SourceId": "waterprj",
       "SourceType": "Discovered",
@@ -1592,6 +1573,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\logos\\ibm.svg"
+    },
+    {
+      "Identity": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\logo water.png",
+      "SourceId": "waterprj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\",
+      "BasePath": "_content/waterprj",
+      "RelativePath": "assets/img/logos/logo water.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\logos\\logo water.png"
     },
     {
       "Identity": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\microsoft.svg",

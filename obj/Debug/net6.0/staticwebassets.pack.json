@@ -45,10 +45,6 @@
       "PackagePath": "staticwebassets\\assets\\img\\about\\657591ac130496a1ba74e5ae47e74023.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.jpg"
-    },
-    {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.png",
       "PackagePath": "staticwebassets\\assets\\img\\about\\Blue Company Water Drop Logo -Photoroom.png"
     },
@@ -87,6 +83,10 @@
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\ibm.svg",
       "PackagePath": "staticwebassets\\assets\\img\\logos\\ibm.svg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\logo water.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logos\\logo water.png"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\microsoft.svg",
