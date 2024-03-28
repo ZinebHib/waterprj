@@ -45,13 +45,31 @@
 }
     </tbody>
 </table>
+<br />
+
+<hr />
+
 <h1>Water Consumption</h1>
 
-<h2>Average Consumption per User per Month</h2>
-<canvas id="userConsumptionChart" width="400" height="200"></canvas> <!-- Ajuster la taille ici -->
+<div style="display: flex; flex-direction: row;">
+    <!-- Utiliser flexbox pour aligner les éléments en ligne -->
+    <div>
+        <!-- Pas de marge à gauche -->
+        <h2>Average Consumption per User per Month</h2>
+        <div style="display: flex;">
+            <!-- Utiliser flexbox pour aligner les éléments en ligne -->
+            <canvas id="userConsumptionChart" width="400" height="400"></canvas> <!-- Ajuster la taille ici -->
+           
+        </div>
+    </div>
+</div>
 
-<h2>General Average Consumption per Month</h2>
-<canvas id="generalConsumptionChart" width="400" height="200"></canvas> <!-- Ajuster la taille ici -->
+    <div style="margin-top: 20px;">
+        <h2>General Average Consumption per Month</h2>
+        <canvas id="generalConsumptionChart" width="400" height="400"></canvas> <!-- Ajuster la taille ici -->
+    </div>
+</div>
+
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -65,8 +83,22 @@
                 datasets: [{
                     label: 'Average Consumption',
                     data: Object.values(userChartData),
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.8)', // Rouge foncé
+                        'rgba(255, 99, 132, 0.2)', // Rouge clair
+                        'rgba(75, 192, 192, 0.8)', // Vert foncé
+                        'rgba(75, 192, 192, 0.2)', // Vert clair
+                        'rgba(201, 203, 207, 0.8)', // Gris foncé
+                        'rgba(201, 203, 207, 0.2)' // Gris clair
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(201, 203, 207, 1)',
+                        'rgba(201, 203, 207, 1)'
+                    ],
                     borderWidth: 1
                 }]
             },
@@ -77,7 +109,9 @@
                             beginAtZero: true
                         }
                     }]
-                }
+                },
+                responsive: false, // Désactiver la réactivité pour empêcher le redimensionnement automatique
+                maintainAspectRatio: true // Maintenir le rapport d'aspect pour conserver la taille
             }
         });
 
@@ -85,39 +119,34 @@
         var generalChartData = @Html.Raw(Json.Serialize(ViewData["GeneralChartData"]));
 
         var generalChart = new Chart(ctxGeneral, {
-            type: 'pie',
+            type: 'doughnut', // Utiliser un graphique en anneau
             data: {
                 labels: Object.keys(generalChartData),
                 datasets: [{
                     label: 'General Average Consumption',
                     data: Object.values(generalChartData),
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
+                        'rgba(255, 99, 132, 0.8)', // Rouge foncé
+                        'rgba(255, 99, 132, 0.2)', // Rouge clair
+                        'rgba(75, 192, 192, 0.8)', // Vert foncé
+                        'rgba(75, 192, 192, 0.2)', // Vert clair
+                        'rgba(201, 203, 207, 0.8)', // Gris foncé
+                        'rgba(201, 203, 207, 0.2)' // Gris clair
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
                         'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(201, 203, 207, 1)',
+                        'rgba(201, 203, 207, 1)'
                     ],
                     borderWidth: 1
                 }]
             },
             options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
+                responsive: false, // Désactiver la réactivité pour empêcher le redimensionnement automatique
+                maintainAspectRatio: true // Maintenir le rapport d'aspect pour conserver la taille
             }
         });
     </script>

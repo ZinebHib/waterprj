@@ -5,7 +5,7 @@
 }
 
 <h1>Index</h1>
-
+<link href="css/styles.css" rel="stylesheet" />
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -81,3 +81,68 @@
 }
     </tbody>
 </table>
+
+<html>
+<head>
+    <title>Monthly Consumption Estimation</title>
+   
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Include a CSS file for styling -->
+</head>
+<body>
+    <form asp-action="CalculateAndSaveEstimation" method="post">
+     <div class="container">
+        <h1>Monthly Consumption Estimation</h1>
+        <br />
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="~/assets/img/portfolio/people.jpg" alt="Image 1">
+                <input type="text" name="NumberOfPeople" placeholder="Number of People">
+            </div>
+            <div class="image-item">
+                <img src="~/assets/img/portfolio/pool.jpg" alt="Image 2">
+                <input type="checkbox" name="HasPool" id="hasPool" value="true">
+                    <input type="hidden" name="HasPool" value="false">
+                <label for="hasPool">Has Pool</label>
+            </div>
+            <div class="image-item">
+                <img src="~/assets/img/portfolio/dishwasher.jpg" alt="Image 3">
+                <input type="checkbox" name="UsesDishwasher" id="usesDishwasher" value="true">
+                    <input type="hidden" name="UsesDishwasher" value="false">
+                <label for="usesDishwasher">Uses Dishwasher</label>
+            </div>
+            <div class="image-item">
+                <img src="~/assets/img/portfolio/laundry.jpg" alt="Image 4">
+                <input type="text" name="LaundryFrequency" placeholder="Laundry Frequency (days)">
+            </div>
+            <div class="image-item">
+                <img src="~/assets/img/portfolio/shoer.jpg" alt="Image 5">
+                <input type="text" name="ShowerDuration" placeholder="Shower Duration (minutes)">
+                </div>
+                <div class="image-item">
+                <img src="~/assets/img/portfolio/leak.jpg" alt="Image 5">
+
+                <input type="checkbox" name="LeakDetection" id="leakDetection" value="true">
+                    <input type="hidden" name="LeakDetection" value="false">
+                <label for="leakDetection">Leak Detection</label>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Estimate" class="submit-btn">
+        </div>
+       
+     </div>
+    </form>
+    @if (TempData["EstimationResult"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            Estimation saved successfully. Estimated volume: @TempData["EstimationResult"]
+        </div>
+    }
+</body>
+
+
+</html>
+
+
+

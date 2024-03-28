@@ -9,12 +9,12 @@
       "PackagePath": "staticwebassets\\assets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\1.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\about\\1.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\0339551fbb5b831f9b43b5b99a4d9822.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\0339551fbb5b831f9b43b5b99a4d9822.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\2.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\about\\2.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\113446dade48feb2bb2b9d0f56e9283c.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\113446dade48feb2bb2b9d0f56e9283c.jpg"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\about\\2f82315439a80249be122b194140144a.jpg",
@@ -65,12 +65,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\about\\e65de8c79c7a9632e84525d13462bdcb.jpg"
     },
     {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\b3965654931f5d5e83b4631958b0e80e.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b3965654931f5d5e83b4631958b0e80e.jpg"
+    },
+    {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\close-icon.svg",
       "PackagePath": "staticwebassets\\assets\\img\\close-icon.svg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\header-bg.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\header-bg.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\dfb4bbf873e5bd8771414bc634473387.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\dfb4bbf873e5bd8771414bc634473387.jpg"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\facebook.svg",
@@ -101,28 +105,40 @@
       "PackagePath": "staticwebassets\\assets\\img\\navbar-logo.svg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\1.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\1.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\dishwasher.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\dishwasher.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\2.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\2.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\laundry.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\laundry.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\3.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\3.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\leak.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\leak.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\4.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\4.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\people.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\people.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\5.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\5.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\peopllle.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\peopllle.jpg"
     },
     {
-      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\6.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\6.jpg"
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\poo;.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\poo;.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\pool.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\pool.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\ppl.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\ppl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\shoer.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\shoer.jpg"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\team\\11 (1).jpg",

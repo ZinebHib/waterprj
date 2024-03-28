@@ -10948,15 +10948,15 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
-  text-align: center;
-  color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url('../assets/img/b3965654931f5d5e83b4631958b0e80e.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11319,3 +11319,51 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.container {
+    
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .image-item img {
+        max-width: 75%;
+        height: auto;
+        margin-bottom: 10px;
+        max-width: 75%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 8px; /* Add rounded borders */
+        transition: transform 0.3s ease; /* Add a slow hover effect */
+    }
+    .image-item img:hover {
+        transform: scale(1.1); /* Scale the image up by 10% */
+    }
+.submit-btn {
+    background-color: #ffcc00; /* Set button background color to a darker shade of yellow */
+    color: black; /* Set button text color */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+    text-align: center;
+    display: block; /* Make the button a block element */
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+    .submit-btn:hover {
+        background-color: #ccaa00; /* Change button background color to an even darker shade of yellow on hover */
+    }
