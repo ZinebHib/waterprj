@@ -12,7 +12,7 @@ using waterprj.Models;
 
 namespace waterprj.Controllers
 {
-    [Authorize (Roles ="Admin")]
+    [Authorize ]
     public class ConsumptionController : Controller
     {
         private readonly ApplicationDbContext _context;
