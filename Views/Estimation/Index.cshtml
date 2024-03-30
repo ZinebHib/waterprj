@@ -13,7 +13,7 @@
 
 @if (User.IsInRole("Admin"))
 {
-    <h1>Index</h1>
+     <h1>Index</h1>
     <p>
         <a asp-action="Create">Create New</a>
     </p>
@@ -21,7 +21,7 @@
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.UserId)
+                    @Html.DisplayNameFor(model => model.Id)
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Date)
@@ -55,7 +55,7 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.UserId)
+                        @Html.DisplayFor(modelItem => item.Id)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Date)

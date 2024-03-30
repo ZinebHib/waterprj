@@ -35,8 +35,7 @@ namespace waterprj.Controllers
            }
         //to calculate the estimation based on user's behavior :
         // POST: Estimation/CalculateAndSaveEstimation
-        // POST: Estimation/CalculateAndSaveEstimation
-        // POST: Estimation/CalculateAndSaveEstimation
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CalculateAndSaveEstimation([Bind("NumberOfPeople,HasPool,UsesDishwasher,LaundryFrequency,ShowerDuration,LeakDetection")] Estimation estimation)
@@ -69,7 +68,6 @@ namespace waterprj.Controllers
         }
 
 
-        // Method to get the current user's ID
        
 
 
@@ -116,7 +114,7 @@ namespace waterprj.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserId,Date,EstimatedVolume,NumberOfPeople,HasPool,UsesDishwasher,LaundryFrequency,ShowerDuration,LeakDetection")] Estimation estimation)
+        public async Task<IActionResult> Create([Bind("UserId,Date,EstimatedVolume,NumberOfPeople,HasPool,UsesDishwasher,LaundryFrequency,ShowerDuration,LeakDetection")] Estimation estimation)
         {
             if (ModelState.IsValid)
             {

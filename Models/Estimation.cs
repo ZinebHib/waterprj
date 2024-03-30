@@ -1,8 +1,14 @@
-﻿namespace waterprj.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace waterprj.Models
 {
     public class Estimation
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
         public int Id { get; set; } // Primary Key
+       
         public int UserId { get; set; }
         public DateTime Date { get; set; }
         public double EstimatedVolume { get; set; } // Estimated consumption volume in liters
