@@ -28,7 +28,11 @@ namespace waterprj.Controllers
 
         // GET: Estimation
           public async Task<IActionResult> Index()
-           {
+           {//added for displaying the msg after editing parameters related to estimated volume 
+             if (TempData["SuccessMessage"] != null)
+    {
+        ViewBag.SuccessMessage = TempData["SuccessMessage"];
+    }
                  return _context.Estimation != null ? 
                              View(await _context.Estimation.ToListAsync()) :
                              Problem("Entity set 'ApplicationDbContext.Estimation'  is null.");
@@ -157,8 +161,29 @@ namespace waterprj.Controllers
             {
                 try
                 {
+                    // Charger l'estimation originale depuis la base de données
+                    var originalEstimation = await _context.Estimation.AsNoTracking().FirstOrDefaultAsync(e => e.Id == estimation.Id);
+
+                    if (originalEstimation == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Comparer les valeurs actuelles avec les valeurs originales
+                    if (EstimationValuesAreChanged(estimation, originalEstimation))
+                    {
+                        // Recalculer l'estimation
+                        double newEstimatedVolume = CalculateEstimation(estimation);
+                        estimation.EstimatedVolume = newEstimatedVolume;
+                    }
+
+
+                    // Mettre à jour l'estimation dans la base de données
                     _context.Update(estimation);
                     await _context.SaveChangesAsync();
+
+                    // Store the new estimated volume in TempData
+                    TempData["SuccessMessage"] = "Estimation updated successfully. Estimated volume: " + estimation.EstimatedVolume+" Litters";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -174,6 +199,18 @@ namespace waterprj.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(estimation);
+        }
+
+        //function to compare original values and detect changes
+        private bool EstimationValuesAreChanged(Estimation currentEstimation, Estimation originalEstimation)
+        {
+            
+            return currentEstimation.NumberOfPeople != originalEstimation.NumberOfPeople ||
+                   currentEstimation.HasPool != originalEstimation.HasPool ||
+                   currentEstimation.UsesDishwasher != originalEstimation.UsesDishwasher ||
+                   currentEstimation.LaundryFrequency != originalEstimation.LaundryFrequency ||
+                   currentEstimation.ShowerDuration != originalEstimation.ShowerDuration ||
+                   currentEstimation.LeakDetection != originalEstimation.LeakDetection;
         }
 
         // GET: Estimation/Delete/5

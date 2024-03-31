@@ -10,10 +10,26 @@
 
    
     <link href="css/styles.css" rel="stylesheet" />
+    
+    @* to display success of estimation volume *@
+@if (TempData["EstimationResult"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        Estimation saved successfully. Estimated volume: @TempData["EstimationResult"] litters
+    </div>
+}
 
 @if (User.IsInRole("Admin"))
-{
+{// to print the success message related to the estimated volume modification
+    @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+    {
+        <div class="alert alert-success" role="alert">
+            @Html.Raw(ViewBag.SuccessMessage)
+        </div>
+    }
+    
      <h1>Index</h1>
+
     <p>
         <a asp-action="Create">Create New</a>
     </p>
@@ -144,12 +160,7 @@
        
      </div>
     </form>
-    @if (TempData["EstimationResult"] != null)
-    {
-        <div class="alert alert-success" role="alert">
-            Estimation saved successfully. Estimated volume: @TempData["EstimationResult"]
-        </div>
-    }
+   
 </body>
 
 
