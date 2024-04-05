@@ -10,74 +10,78 @@ using Microsoft.EntityFrameworkCore;
 using waterprj.Data;
 using waterprj.Models;
 
+
+
 namespace waterprj.Controllers
 {
     [Authorize ]
     public class ConsumptionController : Controller
     {
         private readonly ApplicationDbContext _context;
-       
 
-        public ConsumptionController(ApplicationDbContext context)
+        private readonly UserManager<IdentityUser> _userManager;
+        public ConsumptionController(UserManager<IdentityUser> userManager, ApplicationDbContext context)
         {
+            _userManager = userManager;
             _context = context;
         }
-     
 
-      
+
 
 
         // GET: Consumption
-       
+
         public async Task<IActionResult> Index()
 
-       {  
-                // Récupérer toutes les consommations depuis la base de données
-                var consumptions = await _context.Consumption.ToListAsync();
+       {
+            // Récupérer toutes les consommations depuis la base de données
+            var consumptions = await _context.Consumption.ToListAsync();
 
-                // Calculer la moyenne de consommation par utilisateur pour chaque mois
-                var averageConsumptionPerUserPerMonth = consumptions
-                    .GroupBy(c => new { c.UserId, c.Date.Year, c.Date.Month })
-                    .Select(grp => new
-                    {
-                        UserId = grp.Key.UserId,
-                        Year = grp.Key.Year,
-                        Month = grp.Key.Month,
-                        AverageConsumption = grp.Average(c => c.Volume)
-                    });
+            // Calculer la moyenne de consommation par utilisateur pour chaque mois
+            var averageConsumptionPerUserPerMonth = consumptions
+                .GroupBy(c => new { c.UserId, c.Date.Year, c.Date.Month })
+                .Select(grp => new
+                {
+                    UserId = grp.Key.UserId,
+                    Year = grp.Key.Year,
+                    Month = grp.Key.Month,
+                    AverageConsumption = grp.Average(c => c.Volume)
+                });
 
-                // Calculer la moyenne générale de la consommation par mois
-                var generalAverageConsumptionPerMonth = consumptions
-                    .GroupBy(c => new { c.Date.Year, c.Date.Month })
-                    .Select(grp => new
-                    {
-                        Year = grp.Key.Year,
-                        Month = grp.Key.Month,
-                        AverageConsumption = grp.Average(c => c.Volume)
-                    });
+            // Calculer la moyenne générale de la consommation par mois
+            var generalAverageConsumptionPerMonth = consumptions
+                .GroupBy(c => new { c.Date.Year, c.Date.Month })
+                .Select(grp => new
+                {
+                    Year = grp.Key.Year,
+                    Month = grp.Key.Month,
+                    AverageConsumption = grp.Average(c => c.Volume)
+                });
 
-                // Préparer les données pour les deux graphiques
-                var userChartData = averageConsumptionPerUserPerMonth
-                    .ToDictionary(
-                        grp => $"{grp.UserId}_{grp.Year}_{grp.Month}",
-                        grp => grp.AverageConsumption);
+            // Préparer les données pour les deux graphiques
+            var userChartData = averageConsumptionPerUserPerMonth
+                .ToDictionary(
+                    grp => $"{grp.UserId}_{grp.Year}_{grp.Month}",
+                    grp => grp.AverageConsumption);
 
-                var generalChartData = generalAverageConsumptionPerMonth
-                    .ToDictionary(
-                        grp => $"{grp.Year}_{grp.Month}",
-                        grp => grp.AverageConsumption);
+            var generalChartData = generalAverageConsumptionPerMonth
+                .ToDictionary(
+                    grp => $"{grp.Year}_{grp.Month}",
+                    grp => grp.AverageConsumption);
 
-                // Passer les données au modèle pour affichage
-                ViewData["UserChartData"] = userChartData;
-                ViewData["GeneralChartData"] = generalChartData;
+            // Passer les données au modèle pour affichage
+            ViewData["UserChartData"] = userChartData;
+            ViewData["GeneralChartData"] = generalChartData;
 
-                return View(consumptions);
-            }
-           
-        
+            return View(consumptions);
+        }
 
-        // GET: Consumption/Details/5
-        public async Task<IActionResult> Details(int? id)
+    
+
+
+
+    // GET: Consumption/Details/5
+    public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Consumption == null)
             {

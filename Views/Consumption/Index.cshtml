@@ -8,76 +8,68 @@
     ViewData["Title"] = "Index";
 }
 
-
 @if (User.IsInRole("Admin"))
 {
     <h1>Index</h1>
 
-
-        <p>
-            <a asp-action="Create">Create New</a>
-        </p>
-        <table class="table">
-            <thead>
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Date)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Volume)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
                 <tr>
-                    <th>
-                        @Html.DisplayNameFor(model => model.UserId)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Date)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Volume)
-                    </th>
-                    <th></th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Volume)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.UserId)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Date)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Volume)
-                        </td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
+            }
+        </tbody>
     </table>
     <br />
-
     <hr />
 }
 
 <h1>Water Consumption</h1>
 
 <div style="display: flex; flex-direction: row;">
-    <!-- Utiliser flexbox pour aligner les éléments en ligne -->
     <div>
-        <!-- Pas de marge à gauche -->
         <h2>Average Consumption per User per Month</h2>
         <div style="display: flex;">
-            <!-- Utiliser flexbox pour aligner les éléments en ligne -->
-            <canvas id="userConsumptionChart" width="400" height="400"></canvas> <!-- Ajuster la taille ici -->
-           
+            <canvas id="userConsumptionChart" width="400" height="400"></canvas>
         </div>
     </div>
 </div>
 
-    <div style="margin-top: 20px;">
-        <h2>General Average Consumption per Month</h2>
-        <canvas id="generalConsumptionChart" width="400" height="400"></canvas> <!-- Ajuster la taille ici -->
-    </div>
+<div style="margin-top: 20px;">
+    <h2>General Average Consumption per Month</h2>
+    <canvas id="generalConsumptionChart" width="400" height="400"></canvas>
 </div>
 
 @section Scripts {
@@ -87,28 +79,14 @@
         var userChartData = @Html.Raw(Json.Serialize(ViewData["UserChartData"]));
 
         var userChart = new Chart(ctxUser, {
-            type: 'bar', // Utiliser un graphique à barres
+            type: 'bar',
             data: {
                 labels: Object.keys(userChartData),
                 datasets: [{
                     label: 'Average Consumption',
                     data: Object.values(userChartData),
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.8)', // Rouge foncé
-                        'rgba(255, 99, 132, 0.2)', // Rouge clair
-                        'rgba(75, 192, 192, 0.8)', // Vert foncé
-                        'rgba(75, 192, 192, 0.2)', // Vert clair
-                        'rgba(201, 203, 207, 0.8)', // Gris foncé
-                        'rgba(201, 203, 207, 0.2)' // Gris clair
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(201, 203, 207, 1)',
-                        'rgba(201, 203, 207, 1)'
-                    ],
+                    backgroundColor: 'rgba(255, 99, 132, 0.8)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
                     borderWidth: 1
                 }]
             },
@@ -120,8 +98,8 @@
                         }
                     }]
                 },
-                responsive: false, // Désactiver la réactivité pour empêcher le redimensionnement automatique
-                maintainAspectRatio: true // Maintenir le rapport d'aspect pour conserver la taille
+                responsive: false,
+                maintainAspectRatio: true
             }
         });
 
@@ -129,34 +107,28 @@
         var generalChartData = @Html.Raw(Json.Serialize(ViewData["GeneralChartData"]));
 
         var generalChart = new Chart(ctxGeneral, {
-            type: 'doughnut', // Utiliser un graphique en anneau
+            type: 'doughnut',
             data: {
                 labels: Object.keys(generalChartData),
                 datasets: [{
                     label: 'General Average Consumption',
                     data: Object.values(generalChartData),
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.8)', // Rouge foncé
-                        'rgba(255, 99, 132, 0.2)', // Rouge clair
-                        'rgba(75, 192, 192, 0.8)', // Vert foncé
-                        'rgba(75, 192, 192, 0.2)', // Vert clair
-                        'rgba(201, 203, 207, 0.8)', // Gris foncé
-                        'rgba(201, 203, 207, 0.2)' // Gris clair
+                        'rgba(255, 99, 132, 0.8)',
+                        'rgba(75, 192, 192, 0.8)',
+                        'rgba(201, 203, 207, 0.8)',
                     ],
                     borderColor: [
                         'rgba(255, 99, 132, 1)',
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(75, 192, 192, 1)',
                         'rgba(75, 192, 192, 1)',
                         'rgba(201, 203, 207, 1)',
-                        'rgba(201, 203, 207, 1)'
                     ],
                     borderWidth: 1
                 }]
             },
             options: {
-                responsive: false, // Désactiver la réactivité pour empêcher le redimensionnement automatique
-                maintainAspectRatio: true // Maintenir le rapport d'aspect pour conserver la taille
+                responsive: false,
+                maintainAspectRatio: true
             }
         });
     </script>

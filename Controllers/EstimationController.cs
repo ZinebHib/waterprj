@@ -67,8 +67,8 @@ namespace waterprj.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // If ModelState is not valid, return to the Create view to correct errors
-            return View("Create", estimation);
+            // If ModelState is not valid, return to the Index view to correct errors
+            return View("Create",estimation);
         }
 
 
