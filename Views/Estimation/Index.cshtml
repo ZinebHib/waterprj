@@ -10,12 +10,27 @@
 
    
     <link href="css/styles.css" rel="stylesheet" />
+@*      to display success of estimation volume from edit
+ *@@if (TempData["SuccMessage"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["SuccMessage"]
+    </div>
+}
 
-    @* to display success of estimation volume *@
-@if (TempData["EstimationResult"] != null)
+@*      to display success of estimation volume from form 
+ *@@if (TempData["EstimationResult"] != null)
 {
     <div class="alert alert-success" role="alert">
         Estimation saved successfully. Estimated volume: @TempData["EstimationResult"] litters
+    </div>
+}
+
+@* to display success message after creating estimation for admin from create
+ *@@if (ViewBag.SuccMessage != null)
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.SuccMessage
     </div>
 }
 

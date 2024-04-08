@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Humanizer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -121,11 +122,22 @@ namespace waterprj.Controllers
         public async Task<IActionResult> Create([Bind("UserId,Date,EstimatedVolume,NumberOfPeople,HasPool,UsesDishwasher,LaundryFrequency,ShowerDuration,LeakDetection")] Estimation estimation)
         {
             if (ModelState.IsValid)
-            {
+            { // Calculez automatiquement la valeur de EstimatedVolume s'il est null
+                if (estimation.EstimatedVolume == null)
+                {
+                    double estimatedVolume = CalculateEstimation(estimation);
+                    estimation.EstimatedVolume = estimatedVolume;
+                }
+
                 _context.Add(estimation);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Estimation created successfully. Estimated volume: " + estimation.EstimatedVolume + " Liters";
+
                 return RedirectToAction(nameof(Index));
+
             }
+
+
             return View(estimation);
         }
 
@@ -169,6 +181,13 @@ namespace waterprj.Controllers
                         return NotFound();
                     }
 
+                    // Si EstimatedVolume est null, recalculer l'estimation
+                    if (estimation.EstimatedVolume == null)
+                    {
+                        double newEstimatedVolume = CalculateEstimation(estimation);
+                        estimation.EstimatedVolume = newEstimatedVolume;
+                    }
+
                     // Comparer les valeurs actuelles avec les valeurs originales
                     if (EstimationValuesAreChanged(estimation, originalEstimation))
                     {
@@ -183,7 +202,7 @@ namespace waterprj.Controllers
                     await _context.SaveChangesAsync();
 
                     // Store the new estimated volume in TempData
-                    TempData["SuccessMessage"] = "Estimation updated successfully. Estimated volume: " + estimation.EstimatedVolume+" Litters";
+                    TempData["SuccMessage"] = "Estimation updated successfully. Estimated volume: " + estimation.EstimatedVolume+" Litters";
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -247,12 +266,27 @@ namespace waterprj.Controllers
             }
             
             await _context.SaveChangesAsync();
+            // Après avoir supprimé tous les enregistrements,  la méthode  réinitialise l'auto-incrémentation si nécessaire
+            return RedirectToAction(nameof(ResetAutoIncrementIfEmpty));
             return RedirectToAction(nameof(Index));
+
         }
 
         private bool EstimationExists(int id)
         {
           return (_context.Estimation?.Any(e => e.Id == id)).GetValueOrDefault();
+        }
+/*       method  to reset id after clearing the database from estimation
+*/        public IActionResult ResetAutoIncrementIfEmpty()
+        {
+            // Vérifier si la table Estimation est vide
+            if (!_context.Estimation.Any())
+            {
+                // Réinitialiser l'auto-incrémentation de l'identifiant à 0
+                _context.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('Estimation', RESEED, 0)");
+            }
+
+            return RedirectToAction(nameof(Index)); // Rediriger vers l'action Index ou toute autre action après la réinitialisation
         }
     }
 }

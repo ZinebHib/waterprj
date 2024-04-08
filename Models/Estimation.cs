@@ -11,7 +11,7 @@ namespace waterprj.Models
        
         public int UserId { get; set; }
         public DateTime Date { get; set; }
-        public double EstimatedVolume { get; set; } // Estimated consumption volume in liters
+        public double? EstimatedVolume { get; set; } // Estimated consumption volume in liters
 
         // User-provided attributes for simple estimation
         [Required(ErrorMessage = "Please enter the number of people!")]
