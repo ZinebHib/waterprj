@@ -14,7 +14,7 @@ using waterprj.Models;
 
 namespace waterprj.Controllers
 {
-    [Authorize ]
+    [Authorize]
     public class ConsumptionController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -33,7 +33,7 @@ namespace waterprj.Controllers
 
         public async Task<IActionResult> Index()
 
-       {
+        {
             // Récupérer toutes les consommations depuis la base de données
             var consumptions = await _context.Consumption.ToListAsync();
 
@@ -76,12 +76,12 @@ namespace waterprj.Controllers
             return View(consumptions);
         }
 
-    
 
 
 
-    // GET: Consumption/Details/5
-    public async Task<IActionResult> Details(int? id)
+
+        // GET: Consumption/Details/5
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Consumption == null)
             {
@@ -203,15 +203,25 @@ namespace waterprj.Controllers
             {
                 _context.Consumption.Remove(consumption);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ConsumptionExists(int id)
         {
-          return (_context.Consumption?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Consumption?.Any(e => e.Id == id)).GetValueOrDefault();
         }
-    
-  }
+
+
+        // GET: Consumption/Advice
+        public IActionResult Advice()
+        {
+            // Code de comparaison et de message d'avis ici
+
+            return View();
+        }
+
+
+    }
 }
