@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\about\\e65de8c79c7a9632e84525d13462bdcb.jpg"
     },
     {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\appareil economes.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\appareil economes.jpg"
+    },
+    {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\b3965654931f5d5e83b4631958b0e80e.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\b3965654931f5d5e83b4631958b0e80e.jpg"
     },
@@ -75,6 +79,18 @@
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\dfb4bbf873e5bd8771414bc634473387.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\dfb4bbf873e5bd8771414bc634473387.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\douche.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\douche.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\eau de pluie.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\eau de pluie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\faible debit.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\faible debit.jpg"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\facebook.svg",
@@ -139,6 +155,10 @@
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\portfolio\\shoer.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\shoer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\reparer fuite.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\reparer fuite.jpg"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\team\\11 (1).jpg",

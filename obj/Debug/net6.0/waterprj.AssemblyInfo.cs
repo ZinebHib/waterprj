@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("waterprj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79e42476af0bdfc9a67f832750c46496cfe3302f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b783d5b6db85c19049787acbdbe029ede010dc73")]
 [assembly: System.Reflection.AssemblyProductAttribute("waterprj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("waterprj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

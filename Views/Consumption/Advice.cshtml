@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Advice";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for Saving Water</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Couleur de fond de la page */
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #14B1E5; /* Couleur de fond de l'en-tête */
+            color: white; /* Couleur du texte de l'en-tête */
+            font-size: 36px; /* Taille de police de l'en-tête */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte pour la profondeur */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff; /* Couleur de fond du conteneur */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre */
+        }
+
+        .tip {
+            display: flex;
+            align-items: center;
+            justify-content: space-around; /* Espace égal entre les éléments */
+            margin-bottom: 40px; /* Espace entre les conseils */
+            border-radius: 10px; /* Coins arrondis */
+            transition: transform 0.3s ease-in-out; /* Animation de transition */
+        }
+
+            .tip img {
+                max-width: 300px;
+                height: auto;
+                border-radius: 10px;
+                transition: transform 0.3s ease-in-out; /* Animation de transition */
+            }
+
+        .tip-text {
+            flex: 1;
+            padding: 0 20px; /* Marge intérieure pour séparer le texte de l'image */
+            text-align: left; /* Alignement du texte */
+        }
+
+        .tip:nth-child(odd) {
+            background-color: #f9f9f9; /* Couleur de fond pour les conseils impairs */
+        }
+
+        .tip:nth-child(even) {
+            background-color: #e9e9e9; /* Couleur de fond pour les conseils pairs */
+        }
+
+        .tip:hover {
+            transform: translateY(-5px); /* Déplacement légèrement vers le haut au survol */
+        }
+
+            .tip:hover img {
+                transform: scale(1.1); /* Zoom interne au survol */
+            }
+
+        h3 {
+            font-family: 'Roboto', sans-serif; /* Police différente pour les titres */
+            color: #333; /* Couleur du texte du titre */
+            margin-top: 0; /* Supprimer la marge supérieure par défaut */
+        }
+
+        .tip-text p {
+            font-family: 'Open Sans', sans-serif; /* Police différente pour les paragraphes */
+            color: #555; /* Couleur du texte du paragraphe */
+            line-height: 1.6; /* Hauteur de ligne pour un meilleur espacement */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tips for <span style="color: white;">Saving</span> Water</h1>
+    </div> <!-- En-tête avec le titre stylisé -->
+    <div class="container">
+        <div class="tip">
+            <img src="~/assets/img/reparer fuite.jpg" alt="Repair Leaks">
+            <div class="tip-text">
+                <h3>Repair Leaks</h3>
+                <p>Look for and repair leaks in faucets, pipes, and toilets. A simple leak can waste hundreds of liters of water every day.</p>
+            </div>
+        </div>
+        <div class="tip">
+            <div class="tip-text">
+                <h3>Install Low-Flow Fixtures</h3>
+                <p>Replace old faucets, showerheads, and toilets with low-flow models. This helps to reduce the amount of water used without sacrificing comfort.</p>
+            </div>
+            <img src="~/assets/img/faible debit.jpg" alt="Low-Flow Fixtures">
+        </div>
+        <div class="tip">
+            <img src="~/assets/img/eau de pluie.jpg" alt="Collect Rainwater">
+            <div class="tip-text">
+                <h3>Collect Rainwater</h3>
+                <p>Use rain barrels to collect water that falls on your roof. This water can be used for watering the garden or washing the car.</p>
+            </div>
+        </div>
+        <div class="tip">
+            <div class="tip-text">
+                <h3>Take Shorter Showers</h3>
+                <p>Reduce the length of your showers to save water. Each minute of showering can consume up to 20 liters of water.</p>
+            </div>
+            <img src="~/assets/img/douche.jpg" alt="Shorter Showers">
+        </div>
+        <div class="tip">
+            <img src="~/assets/img/appareil economes.jpg" alt="Water-Efficient Appliances">
+            <div class="tip-text">
+                <h3>Use Water-Efficient Appliances</h3>
+                <p>Opt for dishwashers and washing machines certified for low water consumption. They use less water per wash cycle.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
