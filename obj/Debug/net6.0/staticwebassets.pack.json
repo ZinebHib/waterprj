@@ -93,6 +93,14 @@
       "PackagePath": "staticwebassets\\assets\\img\\faible debit.jpg"
     },
     {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\grey water.jfif",
+      "PackagePath": "staticwebassets\\assets\\img\\grey water.jfif"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\greywater.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\greywater.jpg"
+    },
+    {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\logos\\facebook.svg",
       "PackagePath": "staticwebassets\\assets\\img\\logos\\facebook.svg"
     },
@@ -171,6 +179,14 @@
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\team\\11 (3).jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team\\11 (3).jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\turn off faucets.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\turn off faucets.jpg"
+    },
+    {
+      "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\assets\\img\\watering plants.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\watering plants.jpg"
     },
     {
       "Id": "C:\\Users\\21260\\OneDrive\\Documents\\dotnet\\waterprj\\wwwroot\\css\\site.css",
