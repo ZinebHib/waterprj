@@ -4,17 +4,25 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
+
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = " Consumption Information";
 }
+<hr class="my-4">
 
-@if (User.IsInRole("Admin"))
-{
-    <h1>Index</h1>
+<h1 class="text-center">@ViewData["Title"]</h1>
+<hr class="my-4">
 
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
+<div >
+    <a asp-action="Create" class=" link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Create New </a>
+</div>
+
+
+
+
+
+@* @if (User.IsInRole("Admin"))
+{ *@
     <table class="table">
         <thead>
             <tr>
@@ -35,7 +43,7 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(modelItem => item.UserId)
+                        @Html.DisplayFor(modelItem => item.Id)
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Date)
@@ -54,39 +62,88 @@
     </table>
     <br />
     <hr />
-}
+@* } *@
 
-<h1>Water Consumption</h1>
 
-<div style="display: flex; flex-direction: row;">
-    <div>
-        <h2>Average Consumption per User per Month</h2>
-        <div style="display: flex;">
-            <canvas id="userConsumptionChart" width="400" height="400"></canvas>
+
+
+
+
+
+
+<h2 class="text-center"> Monthly Consumption</h2>
+<hr class="my-4">
+
+
+<div class="chart-container">
+    <canvas id="userMonthlyConsumptionChart"></canvas>
+</div>
+
+<hr class="my-4">
+
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="text-center">Consumption per Month</h2>
+            <div class="chart-container">
+                <canvas id="userConsumptionChart"></canvas>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="text-center">General Average Consumption per Month</h2>
+            <div class="chart-container">
+                <canvas id="generalConsumptionChart"></canvas>
+            </div>
         </div>
     </div>
 </div>
 
-<div style="margin-top: 20px;">
-    <h2>General Average Consumption per Month</h2>
-    <canvas id="generalConsumptionChart" width="400" height="400"></canvas>
+<br />
+<div class="alert alert-info alert-dismissible fade show message-container" id="messageContainer" role="alert" style="display: none;">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <p id="messageContent"></p>
 </div>
+
+
+<hr class="my-4"><br />
+
+
+@* <div class="text-center my-4">
+    <a asp-action="Advice" class="btn btn-success btn-lg">Water Consumption Advice</a>
+</div>
+ *@
+ <div class="container">
+
+    <div id="adviceButton" class="text-center my-4" style="display: none;">
+        <a asp-action="Advice" class="btn btn-success btn-lg">Water Management Tips </a>
+    </div>
+    <div id="compareButton" class="text-center my-4" >
+        <a class="btn btn-primary">Compare</a>
+    </div>
+</div>
+
 
 @section Scripts {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+      
         var ctxUser = document.getElementById('userConsumptionChart').getContext('2d');
-        var userChartData = @Html.Raw(Json.Serialize(ViewData["UserChartData"]));
+        var userChartData = @Html.Raw(ViewData["UserMonthlyDatabar"]);
 
         var userChart = new Chart(ctxUser, {
             type: 'bar',
             data: {
-                labels: Object.keys(userChartData),
+                labels: userChartData.map(data => data.Month),
                 datasets: [{
-                    label: 'Average Consumption',
-                    data: Object.values(userChartData),
-                    backgroundColor: 'rgba(255, 99, 132, 0.8)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
+                    label: 'Total Consumption',
+                    data: userChartData.map(data => data.Volume),
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1
                 }]
             },
@@ -98,10 +155,12 @@
                         }
                     }]
                 },
-                responsive: false,
-                maintainAspectRatio: true
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
+
+      
 
         var ctxGeneral = document.getElementById('generalConsumptionChart').getContext('2d');
         var generalChartData = @Html.Raw(Json.Serialize(ViewData["GeneralChartData"]));
@@ -114,24 +173,77 @@
                     label: 'General Average Consumption',
                     data: Object.values(generalChartData),
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.8)',
-                        'rgba(75, 192, 192, 0.8)',
-                        'rgba(201, 203, 207, 0.8)',
+                        'rgba(255, 58, 58, 0.8)',
+                        'rgba(138, 209, 255, 0.8)',
+                        'rgba(25, 135, 84, 0.8)'
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(201, 203, 207, 1)',
+                        'rgba(255, 58, 58, 1)',
+                        'rgba(138, 209, 255, 1)',
+                        'rgba(25, 135, 84, 1)'
                     ],
                     borderWidth: 1
                 }]
             },
             options: {
-                responsive: false,
-                maintainAspectRatio: true
+                responsive: true,
+                maintainAspectRatio: false
             }
         });
-    </script>
-    <a asp-action="Advice" class="btn btn-primary">Water Consumption Advice</a>
+        
+        var ctxUserMonthly = document.getElementById('userMonthlyConsumptionChart').getContext('2d');
+        var userMonthlyData = @Html.Raw(Json.Serialize(ViewData["UserMonthlyData"]));
 
+        var userMonthlyChart = new Chart(ctxUserMonthly, {
+            type: 'line',
+            data: {
+                labels: userMonthlyData.map(data => data.month),
+                datasets: [{
+                    label: 'Your Monthly Consumption',
+                    data: userMonthlyData.map(data => data.volume),
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            autoSkip: false
+                        }
+                    }]
+                }
+            }
+        });
+
+       
+      
+        // Fonction pour gérer le clic sur le bouton Compare
+        $('#compareButton').click(function () {
+            $.ajax({
+                url: '@Url.Action("Compare", "Consumption")',
+                type: 'POST',
+                success: function (data) {
+                    $('#messageContent').text(data.message); // Mettre à jour le contenu du message
+                    $('#messageContainer').fadeIn(); // Afficher le message avec animation
+                    if (data.showAdviceButton) {
+                        $('#adviceButton').show();
+                    } else {
+                        $('#adviceButton').hide();
+                    }
+                },
+                error: function () {
+                    alert('Une erreur s\'est produite lors de la comparaison.');
+                }
+            });
+        });
+
+
+
+
+
+    </script>
 }
