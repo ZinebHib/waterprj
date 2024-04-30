@@ -1,0 +1,6 @@
+projectKey=water-prj
+serverUrl=http://localhost:9000
+serverVersion=10.5.0.89998
+dashboardUrl=http://localhost:9000/dashboard?id=water-prj
+ceTaskId=d889d3d7-b972-45ca-af4d-923c0b0277fa
+ceTaskUrl=http://localhost:9000/api/ce/task?id=d889d3d7-b972-45ca-af4d-923c0b0277fa

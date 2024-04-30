@@ -278,10 +278,10 @@ C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\staticwebasse
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\scopedcss\bundle\waterprj.styles.css
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\scopedcss\projectbundle\waterprj.bundle.scp.css
-C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.csproj.CopyComplete
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.dll
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\refint\waterprj.dll
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.pdb
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.genruntimeconfig.cache
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\ref\waterprj.dll
 C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.sourcelink.json
+C:\Users\21260\OneDrive\Documents\dotnet\waterprj\obj\Debug\net6.0\waterprj.csproj.Up2Date
