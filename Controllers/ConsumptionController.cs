@@ -310,11 +310,11 @@ namespace waterprj.Controllers
             string message;
             if (exceedingMonths.Any())
             {
-                message = $"Votre consommation a dépassé la moyenne pour les mois suivants : {string.Join(", ", exceedingMonths)}. Nous vous recommandons de faire attention à votre consommation d'eau.";
+                message = $"Your consumption has exceeded the average for the following months: {string.Join(", ", exceedingMonths)}!! We recommend that you pay attention to your water usage and visit our advice page for more tips on water conservation.";
             }
             else
             {
-                message = "Félicitations ! Votre consommation d'eau est dans la moyenne. Continuez ainsi.";
+                message = "Congratulations! Your water consumption is average. Keep it up.";
             }
 
             bool showAdviceButton = exceedingMonths.Any();
